@@ -1,5 +1,10 @@
 <?php
 
+// https://github.com/starberry/Git.php -- light fork of kbjr/Git.php just
+// to establish a namespace.
+
+namespace kbjr;
+
 /*
  * Git.php
  *
@@ -15,6 +20,11 @@
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) die('Bad load order');
 
 // ------------------------------------------------------------------------
+
+/**
+ * Simple exception kbjr\Exception
+ */
+class Exception extends \Exception {};
 
 /**
  * Git Interface Class
@@ -110,7 +120,7 @@ class Git {
 	 * @return  bool
 	 */
 	public static function is_repo($var) {
-		return (get_class($var) == 'GitRepo');
+		return (get_class($var) == 'kbjr\\GitRepo');
 	}
 
 }
