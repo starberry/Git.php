@@ -1,6 +1,6 @@
 <?php
 
-// https://github.com/starberry/Git.php -- light fork of kbjr/Git.php just
+// https://github.com/starberry/kbjr-git-php -- light fork of kbjr/Git.php just
 // to establish a namespace.
 
 namespace kbjr;
